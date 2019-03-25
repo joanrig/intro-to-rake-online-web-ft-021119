@@ -13,7 +13,7 @@ end
 task :environment do
   require_relative './config/environment'
   desc 'drop into the Pry console'
-  task :console => :environment do
+  task db:console => :environment do
     Pry.start
   end
 end
